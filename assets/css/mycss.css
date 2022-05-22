@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    
+    background-color: lightgray;
+    background-image: url('../img/archives/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Courier Prime', monospace !important;
+}
+
+#notification{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+#notification img{
+    width: 10%;
+}
+
+/*Menu*/
+.menu-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: rgb(37, 37, 37);
+
+    color: rgb(204, 204, 204);
+
+    display: flex;
+    font-size: 3.5vh;
+}
+
+.menu-bar i:hover{
+    color: aqua;
+}
+
+.menu-bar #search-button{
+    position: absolute;
+    left: 0;
+    padding: 5px;
+}
+
+.menu-bar #extensions {
+    position: absolute;
+    right: 0px;
+    padding: 5px;
+}
