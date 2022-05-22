@@ -1,6 +1,6 @@
-var controllerapi = "https://localhost/derik.site/WS",
-  logo = "https://localhost/derik.site/assets/Icons/favicon.png",
-  URL_BASE = "https://localhost/derik.site";
+var controllerapi = "https://derik.site/WS",
+  logo = "https://derik.site/assets/Icons/favicon.png",
+  URL_BASE = "https://derik.site";
 
 //jquery detectar teclas pressionadas
 $(document).keydown(function (e) {
