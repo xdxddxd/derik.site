@@ -175,7 +175,7 @@ $URL_ATUAL = 'https://localhost' . $_SERVER["REQUEST_URI"];
 if (!isset($_SESSION['USER'])) {
     if ($URL_ATUAL === URL_BASE . "/Login/Convidado") {
         //$router->redirect("/Login");
-    } else if ($URL_ATUAL === URL_BASE . "/Login/App") {
+    } else if ($URL_ATUAL === URL_BASE . "/Login/Admin") {
         //$router->redirect("/Cadastro");
     } else if(strpos($URL_ATUAL, URL_BASE.'/WS/') === 0){
         //$router->redirect("/");
@@ -191,5 +191,6 @@ if (isset($_SESSION['USER']) and ($URL_ATUAL == URL_BASE . "/Login" or $URL_ATUA
 $router->dispatch();
 
 if ($router->error()) {
-    $router->redirect("/Erro/{$router->error()}");
+    // $router->redirect("/Erro/{$router->error()}");
+    $router->redirect("/");
 }
